@@ -25,6 +25,12 @@ Install the dependencies
 cd server
 composer install
 ```
+configure database during composer install
+
+update schema
+```bash
+php bin/console doctrine:schema:update --force
+```
 
 ```bash
 cd client
