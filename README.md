@@ -1,18 +1,14 @@
-symfony-project
+AKIL TEST PROJECT
 ===============
 
-A Symfony project created on January 28, 2018, 1:07 pm.
-
-Symfony Test Project
-=====================
-
-Evaluation for Web App Developer with Symfony.
+Evaluation for Web App Developer with Symfony angularJS.
 
 Prerequisites
 -------------
 
 * [Git](http://git-scm.com/)
 * [npm](https://www.npmjs.org/)
+* [composer](https://getcomposer.org/)
 
 Installation
 ------------
@@ -26,7 +22,7 @@ git clone https://github.com/akiltech/akil-test-project.git && cd akil-test-proj
 Install the dependencies
 
 ```bash
-cd symfony-project
+cd server
 composer install
 ```
 
@@ -38,7 +34,7 @@ npm install
 Start the backend server
 
 ```bash
-cd symfony-project
+cd server
 php bin/console server:start
 ```
 
@@ -54,6 +50,14 @@ Backend runs on http://localhost:8000
 
 REST API for users
 http://localhost:3000/api/users
+
+```bash
+  user_index                 GET      ANY      ANY    /users/
+  user_new                   POST     ANY      ANY    /users/
+  user_show                  GET      ANY      ANY    /users/{id}
+  user_edit                  PUT      ANY      ANY    /users/{id}
+  user_delete                DELETE   ANY      ANY    /users/{id}
+```
 
 Project description
 -------------------
